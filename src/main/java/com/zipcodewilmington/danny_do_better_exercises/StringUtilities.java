@@ -55,7 +55,8 @@ public class StringUtilities {
      * @return the equivalence of two strings, `inputValue` and `comparableValue`
      */
     public static Boolean compareTwoStrings(String inputValue, String comparableValue){
-        return null;
+
+        return (inputValue.equals(comparableValue));
     }
 
     /**
@@ -63,7 +64,10 @@ public class StringUtilities {
      * @return the middle character of `inputValue`
      */
     public static Character getMiddleCharacter(String inputValue){
-        return null;
+
+//        int mid = (inputValue.length() -1) /2;
+
+        return inputValue.charAt((inputValue.length() -1) /2);
     }
 
     /**
@@ -87,6 +91,8 @@ public class StringUtilities {
      * @return an identical string with characters in reverse order.
      */
     public static String reverse(String stringToReverse){
-        return null;
+        StringBuilder reverse = new StringBuilder(stringToReverse);
+
+        return reverse.reverse().toString();
     }
 }
